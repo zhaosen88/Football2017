@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>修改用户信息</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/adminStyle.css">	
+	
+</head>
+<body>
+	<div class="wrapper">
+		<!--top-->
+		<div class="top">
+			<div class="logo">
+				<img src="images/logo.png" alt="" width="199px" height="50px">
+			</div>
+			<div class="top-right">
+				<ul>
+					<li><a href="login.html">退出</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--head-->
+		<div class="head">
+			<div class="shouye">
+				<a href="admin_index.html"><img src="images/home.png" alt="" width="22px" height="22px">首页</a>
+			</div>
+			<div class="head-title">
+				<h3>足球裁判教学后台管理系统</h3>
+			</div>	
+		</div>
+		<!--content-->
+		<div class="row content">
+			<!--slide-nav-->
+			<div class="col-md-2 slideNav">
+				<div class="panel-group" id="panel-320451">
+					<div class="panel">
+						<div class="panel-heading" >
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-78753" style="text-decoration: none;"><img src="images/password.png" alt="" width="18px" height="18px">管理员管理</a>
+						</div>
+						<div id="panel-element-78753" class="panel-collapse collapse " >
+							<div class="panel-body">
+								<a href="admin_list.html">管理员管理</a>
+							</div>
+							<div class="panel-body">
+								<a href="admin_editInfo.html">修改个人信息</a>
+							</div>
+							<div class="panel-body">
+								<a href="admin_editPwd.html">修改密码</a>
+							</div>
+							<div class="panel-body">
+								<a href="admin_add.html">添加管理员</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-816153" style="text-decoration: none;"><img src="images/name.png" alt="" width="18px" height="18px">用户管理</a>
+						</div>
+						<div id="panel-element-816153" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<a href="user_list.html">用户管理</a>
+							</div>
+							<div class="panel-body">
+								<a href="user_edit.html">修改用户信息</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-816154" style="text-decoration: none;"><img src="images/shop.png" alt="" width="18px" height="18px">课程管理</a>
+						</div>
+						<div id="panel-element-816154" class="panel-collapse collapse">
+							<div class="panel-body">
+								<a href="course_video_list.html">视频管理</a>
+							</div>
+							<div class="panel-body">
+								<a href="course_txt_list.html">文档管理</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-816155" style="text-decoration: none;color: #fff;"><img src="images/food.png" alt="" width="18px" height="18px">题库管理</a>
+						</div>
+						<div id="panel-element-816155" class="panel-collapse collapse">
+							<div class="panel-body">
+								<a href="question_option_list.html">选择</a>
+							</div>
+							<div class="panel-body">
+								<a href="question_judge_list.html">判断</a>
+							</div>
+							<div class="panel-body">
+								<a href="question_answer_list.html">简答</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-816156" style="text-decoration: none;color: #fff;"><img src="images/tag.png" alt="" width="18px" height="18px">组卷管理</a>
+						</div>
+						<div id="panel-element-816156" class="panel-collapse collapse">
+							<div class="panel-body">
+								<a href="auto.html">自动组卷管理</a>
+							</div>
+							<div class="panel-body">
+								<a href="manual.html">手动组卷管理</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<!--breadcrumb-->
+				<div class="col-md-12 bread">
+					<ul class="breadcrumb">
+						<li>
+							 <a href="admin_index.html">首页</a>
+						</li>
+						<li>
+							 <a href="user_list.html">用户管理</a>
+						</li>
+						<li>
+							 <a href="#">修改用户信息</a>
+						</li>
+					</ul>
+				</div>
+				<!--userList-->
+				<div class="col-md-12 userList">
+					<div class="col-md-12">
+						<h4>修改用户信息</h4>
+					</div>
+					<!--editInfo-->
+					<div class="col-md-12">
+						<form class="form-horizontal" role="form" action="user_edit.php"  target="sub" method="post" enctype="multipart/form-data">
+							<div class="form-group">
+								 <label  class="col-md-2 control-label">ID：</label>
+								<div class="col-md-3">
+									<input type="num" class="form-control"  name="id" id="ID" />
+								</div>
+							</div>
+							<div class="form-group">
+								 <label class="col-md-2 control-label">用户名：</label>
+								<div class="col-md-3">
+									<input type="text" class="form-control" name="username" id="username" />
+								</div>
+							</div>
+							<div class="form-group">
+								 <label class="col-sm-2 control-label">真实姓名：</label>
+								<div class="col-sm-3">
+									<input type="text" class="form-control" name="name" id="name" />
+								</div>
+							</div>
+							<div class="form-group">
+								 <label  class="col-sm-2 control-label">电子邮件：</label>
+								<div class="col-sm-3">
+									<input type="email" class="form-control" name="email" id="email" />
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-sm-3">
+									 <button type="submit" class="btn">修改</button>
+								</div>
+							</div>
+						</form>
+						<iframe src="" name="sub" width="0" height="0">
+        				</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/adminEditor.js"></script>
+	<script type="text/javascript">
+		$(".btn").click(function(){
+		var id = $("#ID").val();
+		var username = $("#username").val();
+		var name = $("#name").val();
+		var email = $("#email").val();
+		   htmlobj = $.ajax({
+                type:"post",
+                url:"admin.php",
+                data:{id:id,username:username,name:name,email:email,case:6},
+                success:function(data){
+                	console.log(data);
+                	// alert(0);
+            }});
+		    alert("修改成功！");
+		});
+		
+	</script>
+</body>
+</html>

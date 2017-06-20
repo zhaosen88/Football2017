@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+				<link href="css/bootstrap.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/dialog.js"></script>
+		<title>文档学习</title>
+	</head>
+	<body>
+		<!--
+        	作者：632018180@qq.com
+        	时间：2017-05-11
+        	描述：顶部
+        -->
+		<div class="g-warp">
+			<!--
+            	作者：632018180@qq.com
+            	时间：2017-05-11
+            	描述：top
+            -->
+			<div class="topnav rel">
+				<div class="header clear">
+					<span class="u-nav right">
+						<span class="wel-span li">欢迎来到足球裁判教学系统!~</span>
+						<a class="wel-span li" href="#">登录/注册</a>
+						<a class="wel-span li" href="#">我的课程</a>
+					</span>
+				</div>
+			</div>
+			<!--
+            	作者：632018180@qq.com
+            	时间：2017-05-11
+            	描述：logo search
+            -->
+			<div class="midnav rel">
+				<div class="containerStyle clear">
+					<a href="#">
+						<img src="images/logoB.png" class="logo left"></img>
+					</a>
+					<form>
+						<div class="search rel right">
+							<input id="getS" type="text" value="课程、试卷、资讯"/>
+							<input id="getB" type="submit" value="搜索"/>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--
+            	作者：632018180@qq.com
+            	时间：2017-05-11
+            	描述：导航栏
+            -->
+			<div class="footnav rel">
+				<div class="main">
+					<div class="containerStyle clear">
+						<ul>
+							<li class="mainnav left rel liStyle">
+								 <a href="index.html">首页</a>
+							</li>
+							<li class="mainnav left rel liStyle">
+								 <a href="Academy.html">足球学院</a>
+							</li>
+							<li class="mainnav left rel liStyle">
+								 <a href="guize.html">足球竞赛规则考试</a>
+							</li>
+							<li class="mainnav left rel liStyle">
+								 <a href="#">发现</a>
+							</li>
+							<li class="mainnav left rel liStyle">
+								 <a href="#">GOALSHOW</a>
+							</li>						
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="breadO">
+			<div class="breadNav">
+				<div class="breadL">
+					<p class="bread">
+						<a>首页</a><span>></span><a>传球训练</a>
+					</p>
+					<h3 class="className">
+						<span>
+							传球训练
+						</span>
+					</h3>
+				</div>
+			</div>
+		</div>
+		<div class="indexMain">
+			<div class="video">
+				<div class="videoF">
+					<div class="videoS">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="jieshaoVideo">
+			<div class="containerVideo">
+				<a href="#"><img src="" /></a>
+				<h3></h3>
+				<p></p>
+			</div>
+		</div>
+		<div class="footer clearfix">
+        	<div class="footerC">
+        		<span>
+                    版权所有：河北师范大学软件学院 GOAL小组
+                </span>
+                <span>
+                    本站内容不得转载，违者必究
+                </span>
+                <span>
+                    联系地址：河北省石家庄市南二环东路20号&nbsp&nbsp&nbsp&nbsp邮编：050024
+                </span>
+                <span>
+                    感谢河北师范大学软件学院各位老师指导
+                </span>
+        	</div>
+        </div>
+	</body>
+	<script type="text/javascript">
+		//设置和获取href属性中跟在问号后面的值
+           var category=window.location.search;
+        //截取，获取获得category的具体值
+           var catevalId = category.substring(category.indexOf('=')+1, category.lastIndexOf('&&'));
+           var catevalTable = category.substring(category.lastIndexOf('=')+1, category.length);
+
+           $(document).ready(function(){
+			htmlobj = $.ajax({
+				type:"get",
+				url:"admin/list.php",
+				data:{case:4,id:catevalId,table:catevalTable},
+				success:function(){
+				console.log(htmlobj.responseText);
+				var arr=htmlobj.responseText.split('|'); 
+				$(".videoS").append(arr[0]);
+				$(".containerVideo>a>img").attr('src',arr[1]);
+				$(".containerVideo>h3").append(arr[2]);
+				$(".containerVideo>p").append(arr[3]);
+			}});
+		});
+
+ 
+	</script>
+</html>

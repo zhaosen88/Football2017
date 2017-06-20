@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>修改课程</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/adminStyle.css">	
+	
+</head>
+<body>
+	<div class="wrapper">
+		<!--top-->
+		<div class="top">
+			<div class="logo">
+				<img src="images/logo.png" alt="" width="199px" height="50px">
+			</div>
+			<div class="top-right">
+				<ul>
+					<li><a href="login.html">退出</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--head-->
+		<div class="head">
+			<div class="shouye">
+				<a href="admin_index.html"><img src="images/home.png" alt="" width="22px" height="22px">首页</a>
+			</div>
+			<div class="head-title">
+				<h3>足球裁判教学后台管理系统</h3>
+			</div>	
+		</div>
+		<!--content-->
+		<div class="row content">
+			<!--slide-nav-->
+			<div class="col-md-2 slideNav">
+				<div class="panel-group" id="panel-320451">
+					<div class="panel">
+						<div class="panel-heading" >
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-78753" style="text-decoration: none;"><img src="images/password.png" alt="" width="18px" height="18px">管理员管理</a>
+						</div>
+						<div id="panel-element-78753" class="panel-collapse collapse in" >
+							<div class="panel-body">
+								<a href="admin_list.html">管理员管理</a>
+							</div>
+							<div class="panel-body">
+								<a href="admin_editInfo.html">修改个人信息</a>
+							</div>
+							<div class="panel-body">
+								<a href="admin_editPwd.html">修改密码</a>
+							</div>
+							<div class="panel-body">
+								<a href="admin_add.html">添加管理员</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-816153" style="text-decoration: none;"><img src="images/name.png" alt="" width="18px" height="18px">用户管理</a>
+						</div>
+						<div id="panel-element-816153" class="panel-collapse collapse">
+							<div class="panel-body">
+								<a href="user_list.html">用户管理</a>
+							</div>
+							<div class="panel-body">
+								<a href="user_edit.html">修改用户信息</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-816154" style="text-decoration: none;"><img src="images/shop.png" alt="" width="18px" height="18px">课程管理</a>
+						</div>
+						<div id="panel-element-816154" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<a href="course_video_list.html">视频管理</a>
+							</div>
+							<div class="panel-body">
+								<a href="course_txt_list.html">文档管理</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-816155" style="text-decoration: none;color: #fff;"><img src="images/food.png" alt="" width="18px" height="18px">题库管理</a>
+						</div>
+						<div id="panel-element-816155" class="panel-collapse collapse">
+							<div class="panel-body">
+								<a href="question_option_list.html">选择</a>
+							</div>
+							<div class="panel-body">
+								<a href="question_judge_list.html">判断</a>
+							</div>
+							<div class="panel-body">
+								<a href="question_answer_list.html">简答</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-816156" style="text-decoration: none;color: #fff;"><img src="images/tag.png" alt="" width="18px" height="18px">组卷管理</a>
+						</div>
+						<div id="panel-element-816156" class="panel-collapse collapse">
+							<div class="panel-body">
+								<a href="auto.html">自动组卷管理</a>
+							</div>
+							<div class="panel-body">
+								<a href="manual.html">手动组卷管理</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<!--breadcrumb-->
+				<div class="col-md-12 bread">
+					<ul class="breadcrumb">
+						<li>
+							 <a href="admin_index.html">首页</a>
+						</li>
+						<li>
+							 <a href="course_video_list.html">课程管理</a>
+						</li>
+						<li>
+							 <a href="#">修改课程信息</a>
+						</li>
+					</ul>
+				</div>
+				<!--List-->
+				<div class="col-md-12 userList">
+					<div class="col-md-12">
+						<h4>修改课程信息</h4>
+					</div>
+					<!--shop-->
+										<div class="col-md-12">
+<form class="form-horizontal" role="form"  enctype="multipart/form-data">
+						<div class="form-group">
+								 <label for="inputName" class="col-sm-2 control-label">名称</label>
+								<div class="col-sm-3">								
+									<input type="text"  class="form-control" id="inputName"  name="name" />
+								</div>
+						</div>
+
+						<div class="form-group">
+								 <label for="inputAuthor" class="col-sm-2 control-label">作者</label>
+								<div class="col-sm-3">								
+									<input type="text" class="form-control" id="inputAuthor"  />
+								</div>
+						</div>
+
+						<div class="form-group">
+								 <label for="inputAuthorDes"class="col-sm-2 control-label">作者简介</label>
+								<div class="col-sm-3">								
+									<input type="text"  class="form-control"  id="inputAuthorDes" />
+								</div>
+						</div>
+
+						<div class="form-group">
+								 <label for="inputAuthorPic" class="col-sm-2 control-label">作者照片</label>
+								<div class="col-sm-3">								
+									<input type="text"  class="form-control" id="inputAuthorPic"/>
+								</div>
+						</div>
+
+						<div class="form-group">
+								 <label for="inputDescribe" class="col-sm-2 control-label">课程描述</label>
+								<div class="col-sm-3">								
+									<input type="text"  class="form-control" id="inputDescribe"/>
+								</div>
+						</div>
+
+						<div class="form-group">
+								 <label for="inputNum" class="col-sm-2 control-label">课程数</label>
+								<div class="col-sm-3">								
+									<input type="text"  class="form-control" id="inputNum"/>
+								</div>
+						</div>
+
+						<div class="form-group">
+								 <label for="inputTime" class="col-sm-2 control-label">课程时长</label>
+								<div class="col-sm-3">								
+									<input type="text"  class="form-control" id="inputTime"/>
+								</div>
+						</div>
+
+						<div class="form-group">
+								 <label for="inputImg" class="col-sm-2 control-label">课程图片</label>
+								<div class="col-sm-3">								
+									<input type="text"  class="form-control" id="inputImg"/>
+								</div>
+						</div>
+
+						<div class="form-group">
+								 <label for="inputContent" class="col-sm-2 control-label">课程内容</label>
+								<div class="col-sm-3">								
+									<input type="text"  class="form-control" id="inputContent"/>
+								</div>
+						</div>
+
+						<div class="form-group">
+								 <label for="inputType" class="col-sm-2 control-label">课程类型</label>
+								<div class="col-sm-3">								
+									<label>视频:<input type="radio" name="courseType" value="video"></label>
+									<label>文档:<input type="radio" name="courseType" value="txt" ></label>
+								
+								</div>
+						</div>
+
+						<div class="form-group">
+								 <label class="col-sm-2 control-label">修改</label>
+								<div class="col-sm-3" >								
+									<button type="submit" class="btn" >修改</button>
+								</div>
+						</div>
+					</form>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/adminEditor.js"></script>
+	<script type="text/javascript">
+			//设置和获取href属性中跟在问号后面的值
+           var category=window.location.search;
+        	//截取，获取获得category的具体值
+           var catevalId = category.substring(category.indexOf('=')+1, category.length);
+           //console.log(catevalId);
+		htmlobj = $.ajax({
+                type:"post",
+                url:"admin.php",
+                data:{id:catevalId,case:15},
+                success:function(){
+                	console.log(htmlobj.responseText);
+                	var arr = htmlobj.responseText.split('|');
+                	 $("#inputName").val(arr[0]);
+                	 $("#inputAuthor").val(arr[1]);
+                	 $("#inputAuthorDes").val(arr[2]);
+                	 $("#inputAuthorPic").val(arr[3]);
+                	 $("#inputDescribe").val(arr[4]);
+                	 $("#inputNum").val(arr[5]);
+                	 $("#inputTime").val(arr[6]);
+                	 $("#inputImg").val(arr[7]);
+                	 $("#inputContent").val(arr[8]);
+                	 if(arr[9]=="video"){
+                	 	$('input:radio').eq(0).attr('checked', 'true');
+                	 }
+                	  if(arr[9]=="txt"){
+                	 	$('input:radio').eq(1).attr('checked', 'true');
+                	 }
+                	}
+        	});
+
+
+		$(".btn").click(function(){
+		var id = catevalId;
+		var name = $("#inputName").val();
+		var author = $("#inputAuthor").val();
+		var authorDes = $("#inputAuthorDes").val();
+		var authorPic = $("#inputAuthorPic").val(); 
+		var describe = $("#inputDescribe").val();
+		var num = $("#inputNum").val();
+		var time = $("#inputTime").val();
+		var img = $("#inputImg").val();
+		var content = $("#inputContent").val();
+		var type = $('input:radio:checked').val();
+		   htmlobj = $.ajax({
+                type:"post",
+                url:"admin.php",
+                data:{id:id,name:name,author:author,authorDes:authorDes,authorPic:authorPic,describe:describe,num:num,time:time,img:img,content:content,type:type,case:16},
+                success:function(data){
+                	var href ="course_"+type+"_list.html";
+					window.location.href=href;
+                	}
+        	});
+		    alert("修改成功！");
+		    		});
+		
+	</script>
+</body>
+</html>

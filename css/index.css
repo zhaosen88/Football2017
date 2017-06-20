@@ -1,0 +1,33 @@
+#container{
+	height:2000px ;
+	width: 1024px;
+	background-color: gray;
+	
+}
+#header{
+	background-color: green;
+	height: 50px;
+	width: 1024px;
+}
+#mainbody{
+	background-color: darkslategray;
+	height: 1800px;
+	width: 1024px;
+}
+#footer{
+	position: relative;
+	background-color: indianred;
+	height: 150px;
+	width: 1024px;
+}
+#header li{
+	font:30px verdana, arial, sans-serif;
+	list-style: none;
+	margin: 5px;
+}
+#leftmenu li{
+	float: left;
+}
+#rightmenu li{
+	float: right;
+}

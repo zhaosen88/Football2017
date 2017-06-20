@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>修改题库</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/adminStyle.css">	
+	
+</head>
+<body>
+	<div class="wrapper">
+		<!--top-->
+		<div class="top">
+			<div class="logo">
+				<img src="images/logo.png" alt="" width="199px" height="50px">
+			</div>
+			<div class="top-right">
+				<ul>
+					<li><a href="login.html">退出</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--head-->
+		<div class="head">
+			<div class="shouye">
+				<a href="admin_index.html"><img src="images/home.png" alt="" width="22px" height="22px">首页</a>
+			</div>
+			<div class="head-title">
+				<h3>足球裁判教学后台管理系统</h3>
+			</div>	
+		</div>
+		<!--content-->
+		<div class="row content">
+			<!--slide-nav-->
+			<div class="col-md-2 slideNav">
+				<div class="panel-group" id="panel-320451">
+					<div class="panel">
+						<div class="panel-heading" >
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-78753" style="text-decoration: none;"><img src="images/password.png" alt="" width="18px" height="18px">管理员管理</a>
+						</div>
+						<div id="panel-element-78753" class="panel-collapse collapse in" >
+							<div class="panel-body">
+								<a href="admin_list.html">管理员管理</a>
+							</div>
+							<div class="panel-body">
+								<a href="admin_editInfo.html">修改个人信息</a>
+							</div>
+							<div class="panel-body">
+								<a href="admin_editPwd.html">修改密码</a>
+							</div>
+							<div class="panel-body">
+								<a href="admin_add.html">添加管理员</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-816153" style="text-decoration: none;"><img src="images/name.png" alt="" width="18px" height="18px">用户管理</a>
+						</div>
+						<div id="panel-element-816153" class="panel-collapse collapse">
+							<div class="panel-body">
+								<a href="user_list.html">用户管理</a>
+							</div>
+							<div class="panel-body">
+								<a href="user_edit.html">修改用户信息</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-816154" style="text-decoration: none;"><img src="images/shop.png" alt="" width="18px" height="18px">课程管理</a>
+						</div>
+						<div id="panel-element-816154" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<a href="course_video_list.html">视频管理</a>
+							</div>
+							<div class="panel-body">
+								<a href="course_txt_list.html">文档管理</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-816155" style="text-decoration: none;color: #fff;"><img src="images/food.png" alt="" width="18px" height="18px">题库管理</a>
+						</div>
+						<div id="panel-element-816155" class="panel-collapse collapse">
+							<div class="panel-body">
+								<a href="question_option_list.html">选择</a>
+							</div>
+							<div class="panel-body">
+								<a href="question_judge_list.html">判断</a>
+							</div>
+							<div class="panel-body">
+								<a href="question_answer_list.html">简答</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#panel-320451" href="#panel-element-816156" style="text-decoration: none;color: #fff;"><img src="images/tag.png" alt="" width="18px" height="18px">组卷管理</a>
+						</div>
+						<div id="panel-element-816156" class="panel-collapse collapse">
+							<div class="panel-body">
+								<a href="auto.html">自动组卷管理</a>
+							</div>
+							<div class="panel-body">
+								<a href="manual.html">手动组卷管理</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<!--breadcrumb-->
+				<div class="col-md-12 bread">
+					<ul class="breadcrumb">
+						<li>
+							 <a href="admin_index.html">首页</a>
+						</li>
+						<li>
+							 <a href="course_video_list.html">课程管理</a>
+						</li>
+						<li>
+							 <a href="#">修改题库信息</a>
+						</li>
+					</ul>
+				</div>
+				<!--List-->
+				<div class="col-md-12 userList">
+					<div class="col-md-12">
+						<h4>修改题库信息</h4>
+					</div>
+					<!--shop-->
+					<div class="col-md-12">
+						<form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+							<div class="form-group">
+								<label for="inputQuestionType" class="col-md-3 control-label" style="width: 120px;">选择题目类型：</label>
+								<div class="col-md-5">
+									<label for="" class="questionRadio"><input type="radio"  value="option" name="question" />选择题</label>
+									<label for="" class="questionRadio"><input type="radio"  value="judge" name="question" />判断题</label>
+									<label for="" class="questionRadio"><input type="radio"  value="answer" name="question" />简答题</label>
+								</div>
+							</div>
+							<div class="form-group">
+								 <label for="inputQuestion" class="col-sm-2 control-label">题目：</label>
+								<div class="col-sm-3">
+									<textarea class="form-control" id="inputQuestion" rows="3"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								 <label for="inputAnswer" class="col-sm-2 control-label">答案：</label>
+								<div class="col-sm-3">
+									<textarea class="form-control" id="inputAnswer" rows="3"></textarea>
+								</div>
+							</div>
+							<div id="opt">
+								<div class="form-group">
+								 <label for="inputOptA" class="col-sm-2 control-label">选项A：</label>
+								<div class="col-sm-3">
+									<textarea class="form-control" id="inputOptA" rows="3"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								 <label for="inputOptB" class="col-sm-2 control-label">选项B：</label>
+								<div class="col-sm-3">
+									<textarea class="form-control" id="inputOptB" rows="3"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								 <label for="inputOptC" class="col-sm-2 control-label">选项C：</label>
+								<div class="col-sm-3">
+									<textarea class="form-control" id="inputOptC" rows="3"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								 <label for="inputOptD" class="col-sm-2 control-label">选项D：</label>
+								<div class="col-sm-3">
+									<textarea class="form-control" id="inputOptD" rows="3"></textarea>
+								</div>
+							</div>
+							</div>
+							<!-- <div class="form-group">
+								 <label for="inputFoodImg" class="col-sm-2 control-label">美食图片：</label>
+								<div class="col-sm-3">
+									<input type="file" id="inputFoodImg" class="form-control">
+								</div>
+							</div> -->
+							<div class="form-group">
+								<label class="col-sm-2 control-label">修改</label>
+								<div class="col-sm-3" >								
+									<button type="submit" class="edit" >修改</button>
+								</div>
+
+							</div>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/adminEditor.js"></script>
+	<script type="text/javascript">
+		//设置和获取href属性中跟在问号后面的值
+           var category=window.location.search;
+        //截取，获取获得category的具体值
+           var catevalId = category.substring(category.indexOf('=')+1, category.lastIndexOf('&&'));
+           var catevalCase = category.substring(category.lastIndexOf('=')+1, category.length);
+           if(catevalCase == 17){
+           		$("input:radio").eq(0).attr("checked", true);
+           		$("#opt").show();
+           }
+           if(catevalCase == 18){
+           		$("input:radio").eq(1).attr("checked", true);
+           		$("#opt").hide();
+           }
+           if(catevalCase == 19){
+           		$("input:radio").eq(2).attr("checked", true);
+           		$("#opt").hide();
+           }
+		htmlobj = $.ajax({
+                type:"post",
+                url:"admin.php",
+                data:{id:catevalId,case:catevalCase},
+                success:function(){
+                	console.log(htmlobj.responseText);
+                	var arr = htmlobj.responseText.split('|');
+                	 $("#inputQuestion").val(arr[0]);
+                	 $("#inputAnswer").val(arr[1]);
+                	 $("#inputOptA").val(arr[2]);
+                	 $("#inputOptB").val(arr[3]);
+                	 $("#inputOptC").val(arr[4]);
+                	 $("#inputOptD").val(arr[5]);
+                	}
+        	});
+
+
+		$(".edit").click(function(){
+		var question = $("#inputQuestion").val();
+		var answer = $("#inputAnswer").val();
+		var optA = $("#inputOptA").val();
+		var optB = $("#inputOptB").val();
+		var optC = $("#inputOptC").val();
+		var optD = $("#inputOptD").val(); 
+		var type = $('input:radio:checked').val();
+		   htmlobj = $.ajax({
+                type:"post",
+                url:"admin.php",
+                data:{id:catevalId,question:question,answer:answer,optA:optA,optB:optB,optC:optC,optD:optD,type:type,case:20},
+                success:function(){
+                	var href ="question_"+type+"_list.html";
+					window.location.href=href;
+                	}
+        	});
+		    alert("修改成功！");
+		 });
+		
+	</script>
+</body>
+</html>

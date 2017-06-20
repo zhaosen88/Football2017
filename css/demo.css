@@ -1,0 +1,140 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	text-align: center;
+	margin: 0 auto;
+}
+a:hover{
+	text-decoration: none;
+}
+/*header样式*/
+.header{
+	padding: 10px;
+	height: 40px;
+	text-align: center;
+	background-color: #ebebeb;
+	color: #666;
+}
+.header a{
+	font-size:12px/1.14;
+	font-family: arial;
+	color: #666;
+}
+.myClass {
+	padding-right: 0px;
+}
+.login{
+	padding-left:0px;
+	
+}
+.header a:hover{
+	color:#286a46;
+};
+
+
+/*logo样式*/
+/*.logo{
+	height: 100px;
+}*/
+/*.logo p{
+	font-size: 30px;
+	padding-top: 20px;
+}*/
+/*search样式*/
+.search{
+	height: 100px;
+	display: inline;
+}
+#input{
+	height: 35px;
+	width: 80%;
+	margin-top: 40px;
+}
+.btn-search{
+	margin-left: -4px;
+	margin-top: -1px;
+}
+
+/*nav样式*/
+.nav{
+	background-color: #323232;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+}
+#nav ul{
+	display: block;
+  	list-style-type: disc;
+  	-webkit-margin-before: 1em;
+  	-webkit-margin-after: 1em;
+  	-webkit-margin-start: 0px;
+  	-webkit-margin-end: 0px;
+}
+#nav li{
+	float: left;
+	display: block;
+  	/*padding: 0 1px;*/
+  	font-size: 16px;
+  	line-height: 40px;
+  	height: 38px;
+  	border: 1px solid #323232;
+  	transition: 0.4s;
+	list-style: none;
+	text-align: -webkit-match-parent;
+	margin-top: -17px;
+	/*float: left;*/
+	/*text-align: center;
+	display: inline;*/
+	/*padding-right:50px;*/	
+	}
+#nav a{
+	display: block;
+  	padding: 0 10px;
+  	font-size: 16px;
+  	font-weight: bold;
+  	line-height: 40px;
+  	height: 38px;
+  	border: 1px solid #323232;
+  	transition: 0.4s;
+  	text-overflow: ellipsis;
+  	white-space: nowrap;
+	color: #fff;
+	text-decoration: none;
+}
+#nav a:hover{
+	text-decoration: none;
+	display: block;
+	height: 40px;
+	background-color: #616265;
+	color: #fff;
+	font-size: 16px;
+};
+
+/*幻灯片样式*/
+.carousel{
+width: 100%;
+}
+
+/*内容样式*/
+.content{
+
+}
+.content h1{
+	text-align: center;
+	color: orange;
+
+}
+
+/*footer样式*/
+.footer{
+	background-color: #ebebeb;
+}
+.footer p{
+	padding: 50px 0px;
+	text-align: center;
+	font-size: 15px;
+	color:black;
+}

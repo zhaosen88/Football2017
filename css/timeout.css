@@ -1,0 +1,30 @@
+.demo{width:300px; margin:60px auto 10px auto}
+@media only screen and (min-width: 420px) {
+	.demo{width:500px; margin:60px auto 10px auto}
+}
+.demo p{line-height:36px}
+.button {
+	disabled:true;
+	display: inline-block;
+	cursor:pointer;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	font: 16px/100% 'Microsoft yahei',Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #ededed;
+}
+.button:hover {
+	text-decoration: none;
+	background: #fff;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+	color: #999;
+}

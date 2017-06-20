@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="css/guize.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/dialog.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript">
+			$(function(){
+				$(document).ready(function()
+   					{
+   						$("#2").hide();
+   						$("#3").hide();
+   						$("#4").hide();
+    					$(".nav1").click(function()
+    						{
+     							$("#1").show();
+     							$("#2").hide();
+     							$("#3").hide();
+     							$("#4").hide();
+    						});
+     					$(".nav2").click(function()
+    						{
+    							$("#1").hide();
+     							$("#2").show();
+     							$("#3").hide();
+     							$("#4").hide();
+    						}
+    					);
+    						$(".nav3").click(function()
+    						{
+    							$("#1").hide();
+     							$("#2").hide();
+     							$("#3").show();
+     							$("#4").hide();
+    						}
+    					);
+    							$(".nav4").click(function()
+    						{
+    							$("#1").hide();
+     							$("#2").hide();
+     							$("#3").hide();
+     							$("#4").show();
+    						}
+    					);
+  					});
+				})
+		</script>
+		<script language = JavaScript>
+			function showmenu(id) {
+ 			var list = document.getElementById("list"+id);
+ 			var menu = document.getElementById("menu"+id)
+ 			if (list.style.display=="none") {
+ 				 	document.getElementById("list"+id).style.display='block';
+ 			 		menu.className = "title1";
+ 			 		if(id==1){
+ 			 			document.getElementById("list2").style.display="none";
+  						menu.className = "title";
+  						document.getElementById("list3").style.display="none";
+  						menu.className = "title";
+ 			 		}
+ 			 		if(id==2){
+ 			 			document.getElementById("list1").style.display="none";
+  						menu.className = "title";
+  						document.getElementById("list3").style.display="none";
+  						menu.className = "title";
+ 			 		}
+ 			 		if(id==3){
+ 			 			document.getElementById("list1").style.display="none";
+  						menu.className = "title";
+  						document.getElementById("list2").style.display="none";
+  						menu.className = "title";
+ 			 		}
+ 				}else {
+  					document.getElementById("list"+id).style.display="none";
+  					menu.className = "title";
+ 				}
+			} 
+		</script>
+<style type="text/css">
+<!--
+*{margin:0;padding:0;list-style:none}
+#nav{margin:0px 0px 0px 110px;text-align:center;line-height:40px;width:150px;}
+.title{background:#008000;color:#fff;border-bottom:1px solid #fff;cursor:pointer;font-size: 20px; font-family: "Arial","Hiragino Sans GB", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";}
+.title1{background:#888;color:#000;border-bottom:1px solid #666;cursor:pointer;}
+.content li{color:#336699;background:#5cc151;border-bottom:1px solid #fff;font-size: 18px;font-family: "Arial","Hiragino Sans GB", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";}
+.content ul{
+	margin-bottom: 0px;
+}
+-->
+</style>
+		<title>足球裁判教学系统</title>
+	</head>
+	<body>
+		<!--
+        	作者：632018180@qq.com
+        	时间：2017-05-11
+        	描述：顶部
+        -->
+		<div class="g-warp">
+			<!--
+            	作者：632018180@qq.com
+            	时间：2017-05-11
+            	描述：top
+            -->
+			<div class="topnav rel">
+				<div class="header clear">
+					<span class="u-nav right">
+						<span class="wel-span li">欢迎来到足球裁判教学系统!~</span>
+						<a class="wel-span li" href="#">登录</a>
+						<a class="wel-span li" href="#">注册</a>
+						<a class="wel-span li" href="#">我的课程</a>
+					</span>
+				</div>
+			</div>
+			<!--
+            	作者：632018180@qq.com
+            	时间：2017-05-11
+            	描述：logo search
+            -->
+			<div class="midnav rel">
+				<div class="containerStyle clear">
+					<a href="#">
+						<img src="images/logoB.png" class="logo left"></img>
+					</a>
+					<form>
+						<div class="search rel right">
+							<input id="getS" type="text" placeholder="课程、试卷、资讯"/>
+							<input id="getB" type="submit" value="搜索"/>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--
+            	作者：632018180@qq.com
+            	时间：2017-05-11
+            	描述：导航栏
+            -->
+			<div class="footnav rel">
+				<div class="main">
+					<div class="containerStyle clear">
+						<ul>
+							<li class="mainnav left rel liStyle">
+								 <a href="index.html">首页</a>
+							</li>
+							<li class="mainnav left rel liStyle">
+								 <a href="Academy.html">足球学院</a>
+							</li>
+							<li class="mainnav left rel liStyle">
+								 <a href="guize.html">足球竞赛规则考试</a>
+							</li>
+							<li class="mainnav left rel liStyle">
+								 <a href="#">发现</a>
+							</li>
+							<li class="mainnav left rel liStyle">
+								 <a href="#">GOALSHOW</a>
+							</li>						
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="breadO" style="height: 50px;">
+			<div class="breadNav">
+				<div class="breadL">
+					<p class="bread">
+						<a>首页</a><span> > </span><a>足球竞赛规则考试</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	
+    <div class="left1">
+        <div class="firstMain">
+        	<div id ="nav" >
+        		<div class="title" id="menu1" onclick="showmenu('1') ">我的考试</div>
+  				<div id="list1" class="content">
+   					<ul>
+   						<li><a href="#" class="nav1">我的试卷</a></li>
+        				<li><a href="#" class="nav2">历史考试</a></li>
+    				</ul>
+  				</div> 
+  				<div class="title" id="menu2" onclick="showmenu('2') ">自我检测</div>
+  				<div id="list2" class="content" style="display:none">
+   					<ul>
+   						<li><a href="#" class="nav3">自我检测</a></li>
+        				<li><a href="#" class="nav4">检测记录</a></li>
+    				</ul>
+  				</div> 
+  				<div class="title" id="menu3" onclick="showmenu('3') ">错题本</div>
+  				<div id="list3" class="content" style="display:none">
+   					<ul>
+   						<li><a href="#" class="nav5">我的错题</a></li>
+   						<li><a href="#" class="nav6"></a></li>
+    				</ul>
+  				</div> 
+        	</div>
+        </div>
+    </div>
+        
+		<!--右侧-->
+
+        <div class="right1 ">
+        	<div id="1">
+        		<h2>我的试卷</h2>
+          		<p class="real">我的试卷，请选择以下列表中我需要参加的考试</p>
+          		<div class="tm_searchbox">
+          			<form action="" method="post">
+					<div class="tm_searchbox">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;试卷名称 :
+						<input type="text" name="p_name" class="tm_txts" size="15" maxlength="40" value="" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				试卷分类 :
+				<select class="tm_select" name="p_cid" style="min-width:150px">
+					<option value="">全部</option>
+					
+					<option value="a0394fd3-d450-4ccc-a16b-3fed11a18baf" >足球</option>
+					
+					<option value="968447c8-7524-48e4-8b6c-4f2195a26fa6" >足球饮食</option>
+					
+					<option value="f997fb8e-3b87-4ce9-b398-5b0045bcb60a" >足球运动</option>
+					
+					<option value="034c4a18-0d1f-4cef-991a-32eff68ad26c" >足球柔韧</option>
+					
+					
+				</select> &nbsp;
+
+				<button class="tm_btns" type="submit">搜索</button>
+			</div>
+			
+			<!-- 当前日期 -->
+			  
+        		<table width="100%" cellpadding="10" border="0" class="tm_table_list">
+            	<thead>
+                	<tr>
+                        <th>试卷名称</th>
+                    	<th>时间设定</th>
+                        <th>考试时长</th>
+                        <th>试卷类型</th>
+                        <th>卷面总分</th>
+                        <th>及格分数</th>
+                        <th>创建人</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>	
+                </tbody>
+            	</table>
+			</form>
+          		</div>	
+        	</div>
+
+        	<div id="2">
+        	<div class="tm_main">
+        		<div class="tm_container">
+        				<div class="tm_navtitle">
+							<h2>历史考试</h2>
+                			<span>我的试卷，请选择以下列表中我需要参加的考试。</span>
+            			</div>
+        		</div>
+        		<div class="tm_container">
+						<form action="" method="get">
+						<div class="tm_searchbox">
+							试卷名称 :
+						<input type="text" name="p_name" class="tm_txts" size="10" maxlength="20" value="" /> &nbsp;
+						试卷分类 :
+						<select class="tm_select" name="p_cid" style="min-width:150px">
+						<option value="">全部</option>
+						<option value="a0394fd3-d450-4ccc-a16b-3fed11a18baf" >足球饮食</option>
+						<option value="968447c8-7524-48e4-8b6c-4f2195a26fa6" >足球训练</option>
+						<option value="f997fb8e-3b87-4ce9-b398-5b0045bcb60a" >足球传球</option>
+						<option value="78552e6e-1d8c-45a7-a785-c74a45a35e91" >足球柔韧</option>
+						<option value="034c4a18-0d1f-4cef-991a-32eff68ad26c" >足球传球</option>
+						</select> &nbsp;
+						<button class="tm_btns" type="submit">搜索</button>
+				</div>
+			<!-- 当前日期 -->
+			  
+        	<table width="100%" cellpadding="10" border="0" class="tm_table_list">
+            	<thead>
+                	<tr>
+                        <th>试卷名称</th>
+                    	<th>时间设定</th>
+                        <th>考试时长</th>
+                        <th>试卷类型</th>
+                        <th>卷面总分</th>
+                        <th>及格分数</th>
+                        <th>创建人</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>	
+					<!-- 当前试卷的截止日期 -->	
+					<tr>
+						<td>testyz</td>
+                    	<td>
+							2017-05-17 21:20:00<br/>2017-05-25 21:20:00.0
+						</td>
+						<td><span class="tm_label">11</span> 分钟</td>
+						<td><b>随机试卷</b></td>
+						<td><span class="tm_label">20</span></td>
+						<td><span class="tm_label">12</span></td>
+						<td>admin2<br/>2017-05-18 21:24:03</td>
+                        <td><a href="option1.html" onclick="javascript:tm.startExam(this,'3aa906f0-9e4b-4763-9320-e8d7c5a64e3a');">开始考试</a></td>
+                    </tr>
+                	<tr>
+						<td>足球运动</td>
+                    	<td>
+							2017-04-17 14:26:00<br/>2017-05-31 14:26:00.0
+						</td>
+						<td><span class="tm_label">100</span> 分钟</td>
+						<td>普通试卷</td>
+						<td><span class="tm_label">141</span></td>
+						<td><span class="tm_label">85</span></td>
+						<td>admin3<br/>2017-04-17 14:29:17</td>
+                        <td><a href="option1.html" onclick="javascript:tm.startExam(this,'b7f76651-4bbf-4b07-bccc-d150fc71db2e');">开始考试</a></td>
+                    </tr>	
+                	<tr>
+						<td>凯美特财务轮训考试</td>
+                    	<td>
+							2017-04-01 13:44:00<br/>2017-06-11 11:30:00
+						</td>
+						<td><span class="tm_label">300</span> 分钟</td>
+						<td><b>随机试卷</b></td>
+						<td><span class="tm_label">150</span></td>
+						<td><span class="tm_label">90</span></td>
+						<td>admin2<br/>2017-04-01 23:05:42</td>
+                        <td><a href="option1.html" onclick="javascript:tm.startExam(this,'c68d0b89-2515-40d8-8d5e-19717c12c471');">开始考试</a></td>
+                    </tr>
+                	<tr>
+						<td>凯美特财务轮训考试</td>
+                    	<td>
+							2017-03-27 13:44:00.0<br/>2017-03-31 11:30:00.0
+						</td>
+						<td><span class="tm_label">300</span> 分钟</td>
+						<td><b>随机试卷</b></td>
+						<td><span class="tm_label">100</span></td>
+						<td><span class="tm_label">60</span></td>
+						<td>admin2<br/>2017-02-22 09:34:32.0</td>
+                        <td><font color="gray">已结束</font></td>
+                    </tr>	
+                </tbody>
+            </table>
+			</form>
+			<table width="100%" cellpadding="10" border="0" class="tm_table_list">
+				<tfoot>
+					<tr>
+						<td><div class="tm_pager_foot"><a href="index.html">首页</a>&nbsp; <a href="#">上一页</a>&nbsp; <a href="#">下一页</a>&nbsp; <a href="#">尾页</a>&nbsp; &nbsp;共4条记录 &nbsp;  <input type="text" size="1" maxlength="3" class="tm_txt" value="1" onkeyup="tm_fn_page_to(event,'http://demo.tomexam.com/user/paper/list.thtml?',this.value)"  />  /1 页&nbsp; 每页显示 <select id="tm_pager_pagesize" class="tm_select" onchange="tm_fn_pagesize('http://demo.tomexam.com/user/paper/list.thtml?',this.value)"><option value="10" selected>10</option><option value="20" >20</option><option value="50" >50</option><option value="100" >100</option></select> 条</div></td>
+					</tr>
+				</tfoot>
+			</table>
+        		</div>
+			</div>
+    		</div> 
+
+    		<div id="3">
+    			<div class="body1">
+					<div class="border">
+						<h2>自我检测</h2>
+					</div>
+    				<div class="border1">
+					<h4>请选择试题类型:</h4>
+					<input type="radio" name="leixing" value="5">5人制
+					<input type="radio" name="leixing" value="11">11人制
+					<br />
+					<input type="radio" name="tuwen" value="5">图文
+					&nbsp;
+					<input type="radio" name="tuwen" value="11">视频
+					<br /><br />
+					<h4>请选择试题类型:</h4>
+					<input type="radio" name="timu" value="xuanze">选择题
+					<input type="radio" name="timu" value="panduan">判断题
+					<input type="radio" name="timu" value="jianda">简答题
+					<br />
+					<br />
+					<h4>请选择试题类型:</h4>
+					<input type="radio" name="timu1" value="jichu">基础题
+					<input type="radio" name="timu1" value="jinjie">进阶题
+					<input type="radio" name="timu1" value="tuozhan">拓展题
+					</div>
+					<div class="border2">
+						<button type="button"><a href="option1.html">组成试卷</a></button>
+					</div>
+    			</div>
+    		</div>
+
+    		<div id="4">
+        		<div class="tm_main">
+        			<div class="tm_container">
+        				<div class="tm_navtitle">
+							<h2>检测记录</h2>
+                			<span>我的试卷，请选择以下列表中我需要参加的考试。</span>
+            			</div>
+        			</div>
+        			<div class="tm_container">
+						<form action="" method="get">
+						<div class="tm_searchbox">
+							试卷名称 :
+							<input type="text" name="p_name" class="tm_txts" size="10" maxlength="20" value="" /> &nbsp;
+							试卷分类 :
+							<select class="tm_select" name="p_cid" style="min-width:150px">
+							<option value="">全部</option>
+							<option value="a0394fd3-d450-4ccc-a16b-3fed11a18baf" >科目一</option>
+							<option value="968447c8-7524-48e4-8b6c-4f2195a26fa6" >测试分类</option>
+							<option value="f997fb8e-3b87-4ce9-b398-5b0045bcb60a" >wuli</option>
+							<option value="78552e6e-1d8c-45a7-a785-c74a45a35e91" >党员学习</option>
+							<option value="034c4a18-0d1f-4cef-991a-32eff68ad26c" >2017年度考试卷</option>
+							<option value="6c716e58-3b35-4197-be32-20a21267a1d4" >2016年度考试卷</option>
+							</select> &nbsp;
+							<button class="tm_btns" type="submit">搜索</button>
+						</div>
+			<!-- 当前日期 -->
+			  
+        				<table width="100%" cellpadding="10" border="0" class="tm_table_list">
+            		<thead>
+                		<tr>
+                       	 	<th>试卷名称</th>
+                    		<th>时间设定</th>
+                        	<th>考试时长</th>
+                        	<th>试卷类型</th>
+                       	 	<th>卷面总分</th>
+                        	<th>及格分数</th>
+                        	<th>创建人</th>
+                        	<th>操作</th>
+                    	</tr>
+               		</thead>
+                <tbody>	
+					<!-- 当前试卷的截止日期 -->	
+					<tr>
+						<td>testyz</td>
+                    	<td>
+							2017-05-17 21:20:00<br/>2017-05-25 21:20:00.0
+						</td>
+						<td><span class="tm_label">11</span> 分钟</td>
+						<td><b>随机试卷</b></td>
+						<td><span class="tm_label">20</span></td>
+						<td><span class="tm_label">12</span></td>
+						<td>admin2<br/>2017-05-18 21:24:03</td>
+                        <td><a href="panduan.html" onclick="javascript:tm.startExam(this,'3aa906f0-9e4b-4763-9320-e8d7c5a64e3a');">开始考试</a></td>
+                    </tr>
+                	<tr>
+						<td>的试卷啊啊啊啊啊</td>
+                    	<td>
+							2017-04-17 14:26:00<br/>2017-05-31 14:26:00.0
+						</td>
+						<td><span class="tm_label">100</span> 分钟</td>
+						<td>普通试卷</td>
+						<td><span class="tm_label">141</span></td>
+						<td><span class="tm_label">85</span></td>
+						<td>admin3<br/>2017-04-17 14:29:17</td>
+                        <td><a href="panduan.html" onclick="javascript:tm.startExam(this,'b7f76651-4bbf-4b07-bccc-d150fc71db2e');">开始考试</a></td>
+                    </tr>	
+                	<tr>
+						<td>凯美特财务轮训考试</td>
+                    	<td>
+							2017-04-01 13:44:00<br/>2017-06-11 11:30:00
+						</td>
+						<td><span class="tm_label">300</span> 分钟</td>
+						<td><b>随机试卷</b></td>
+						<td><span class="tm_label">150</span></td>
+						<td><span class="tm_label">90</span></td>
+						<td>admin2<br/>2017-04-01 23:05:42</td>
+                        <td><a href="panduan.html" onclick="javascript:tm.startExam(this,'c68d0b89-2515-40d8-8d5e-19717c12c471');">开始考试</a></td>
+                    </tr>
+                		<tr>
+							<td>凯美特财务轮训考试</td>
+                    		<td>
+							2017-03-27 13:44:00.0<br/>2017-03-31 11:30:00.0
+							</td>
+							<td><span class="tm_label">300</span> 分钟</td>
+							<td><b>随机试卷</b></td>
+							<td><span class="tm_label">100</span></td>
+							<td><span class="tm_label">60</span></td>
+							<td>admin2<br/>2017-02-22 09:34:32.0</td>
+                        	<td><font color="gray">已结束</font></td>
+                    	</tr>	
+               	 	</tbody>
+            	</table>
+				</form>
+					<table width="100%" cellpadding="10" border="0" class="tm_table_list">
+						<tfoot>
+							<tr>
+								<td><div class="tm_pager_foot"><a href="index.html">首页</a>&nbsp; <a href="#">上一页</a>&nbsp; <a href="#">下一页</a>&nbsp; <a href="#">尾页</a>&nbsp; &nbsp;共4条记录 &nbsp;  <input type="text" size="1" maxlength="3" class="tm_txt" value="1" onkeyup="tm_fn_page_to(event,'http://demo.tomexam.com/user/paper/list.thtml?',this.value)"  />  /1 页&nbsp; 每页显示 <select id="tm_pager_pagesize" class="tm_select" onchange="tm_fn_pagesize('http://demo.tomexam.com/user/paper/list.thtml?',this.value)"><option value="10" selected>10</option><option value="20" >20</option><option value="50" >50</option><option value="100" >100</option></select> 条</div></td>
+							</tr>
+						</tfoot>
+					</table>
+        			</div>
+				</div>
+    		</div>
+		</div>
+		<div class="footer clearfix">
+        	<div class="footerC">
+        		<span>
+                    版权所有：河北师范大学软件学院 GOAL小组
+                </span>
+                <span>
+                    本站内容不得转载，违者必究
+                </span>
+                <span>
+                    联系地址：河北省石家庄市南二环东路20号&nbsp;&nbsp;&nbsp;&nbsp;邮编：050024
+                </span>
+                <span>
+                    感谢河北师范大学软件学院各位老师指导
+                </span>
+        	</div>
+        </div>
+	</body>
+</html>

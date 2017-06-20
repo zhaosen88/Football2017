@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/option.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/timeout.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dialog.js"></script>
+<script type="text/javascript" src="js/quiz.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>试卷</title>
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+<style type="text/css">
+.demo{width:760px; margin:60px auto 10px auto}
+</style>
+
+<script type="text/javascript">
+// var init={'questions':[
+// 	{'question':'jQuery是什么？',
+// 	 'answers':['1 JavaScript库','2 CSS库','3 PHP框架','4 以上都不是'],
+// 	 'correctAnswer':1
+// 	},
+// 	{'question':'找出不同类的一项?',
+// 	 'answers':['1 写字台','2 沙发','3 电视','4 桌布'],
+// 	 'correctAnswer':3
+// 	},
+// 	{'question':'国土面积最大的国家是：',
+// 	'answers':['1 美国','2 中国',' 3 俄罗斯','4 加拿大'],
+// 	'correctAnswer':3},
+// 	{'question':'国土面积最大的国家是：',
+// 	 'answers':['1 美国','2 中国','3 俄罗斯','4 加拿大'],
+// 	 'correctAnswer':3
+// 	},
+// 	{'question':'月亮距离地球多远？',
+// 	 'answers':['1 18万公里','2 38万公里','3 100万公里','4 180万公里'],
+// 	 'correctAnswer':2
+// 	}]};
+// $(function(){
+// 	$('#quiz-container').jquizzy({
+//         questions: init.questions
+//     });
+// });
+</script>
+
+</head>
+
+<body>
+	<div class="g-warp">
+			
+			<div class="topnav rel">
+				<div class="header clear">
+					<span class="u-nav right">
+						<span class="wel-span li">欢迎来到足球裁判教学系统!~</span>
+						<a class="wel-span li" href="#">登录/注册</a>
+						<a class="wel-span li" href="#">我的课程</a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="midnav rel">
+				<div class="containerStyle clear">
+					<a href="#">
+						<img src="images/logoB.png" class="logo left">
+					</a>
+					<form>
+						<div class="search rel right">
+							<input id="getS" type="text" value="课程、试卷、资讯"/>
+							<input id="getB" type="submit" value="搜索"/>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--
+            	作者：632018180@qq.com
+            	时间：2017-05-11
+            	描述：导航栏
+            -->
+			<div class="footnav rel">
+				<div class="main">
+					<div class="containerStyle clear">
+						<ul>
+							<li class="mainnav left rel liStyle">
+								 <a href="index.html">首页</a>
+							</li>
+							<li class="mainnav left rel liStyle">
+								 <a href="Academy.html">足球学院</a>
+							</li>
+							<li class="mainnav left rel liStyle">
+								 <a href="guize.html">足球竞赛规则考试</a>
+							</li>
+							<li class="mainnav left rel liStyle">
+								 <a href="#">发现</a>
+							</li>
+							<li class="mainnav left rel liStyle">
+								 <a href="#">GOALSHOW</a>
+							</li>						
+						</ul>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+<!-- 代码 开始 -->
+<div class="demo">
+	
+	<div id='quiz-container'>
+		
+	</div>
+</div>
+<!-- 代码 结束 -->
+
+	<div class="footer clearfix">
+        	<div class="footerC">
+        		<span>
+                    版权所有：河北师范大学软件学院 GOAL小组
+                </span>
+                <span>
+                    本站内容不得转载，违者必究
+                </span>
+                <span>
+                    联系地址：河北省石家庄市南二环东路20号&nbsp;&nbsp;&nbsp;&nbsp;邮编：050024
+                </span>
+                <span>
+                    感谢河北师范大学软件学院各位老师指导
+                </span>
+        	</div>
+        </div>
+
+</body>
+	<script type="text/javascript">
+			//自动组卷
+			function auto(num,arr,newArr){
+				for(var i = 0;i<num;i++){
+				var index = Math.floor(Math.random()*arr.length);				
+				newArr.push(arr[index]);
+				arr.splice(index,1);
+				}	
+			}
+			htmlobj = $.ajax({
+                type:"get",
+                url:"admin/list.php",
+                data:{case:7},
+                success:function(data){
+                	console.log(data);
+                	var arr = data.split('|');
+                	//console.log(arr);
+                	var option = arr[0].split('');
+                	//console.log(option);
+                	var judge = arr[1].split('');
+                	//console.log(judge);
+                	var answer = arr[2].split('');
+                	//console.log(answer);
+					var newOption = new Array;
+					var newJudge = new Array;
+					var newAnswer = new Array;
+                	auto(5,option,newOption);
+					auto(2,judge,newJudge);
+					auto(1,answer,newAnswer);
+					console.log(newOption);
+					console.log(newJudge);
+					console.log(newAnswer);
+					var str1 = newOption.join(",");
+					var str2 = newJudge.join(",");
+					var str3 = newAnswer.join(",");
+					htmlobj = $.ajax({
+		                type:"get",
+		                url:"admin/list.php",
+		                data:{case:8,arrOption:newOption,arrJudge:newJudge,arrAnswer:newAnswer,
+		                	strOption:str1,strJudge:str2,strAnswer:str3},
+		                success:function(data){
+		                	console.log(data);
+					        var arr=htmlobj.responseText.split('|');
+					        console.log(arr.length);
+					        var question =[];
+							var optA = [];
+							var optB = [];
+							var optC = [];
+							var optD = [];
+							var answer = [];
+							//30 选择题长度
+				for(var i = 0;i<30;i++){
+					if(i%6 == 0&&arr[i]!=""){
+						question.push(arr[i]);
+					}
+					if(i%6 == 1&&arr[i]!=""){
+						optA.push(arr[i]);
+					}
+					if(i%6 == 2&&arr[i]!=""){
+						optB.push(arr[i]);
+					}
+					if(i%6 == 3&&arr[i]!=""){
+						optC.push(arr[i]);
+					}
+					if(i%6 == 4&&arr[i]!=""){
+						optD.push(arr[i]);
+					}
+					if(i%6 == 5&&arr[i]!=""){
+						answer.push(arr[i]);
+					}
+				}
+				for(var i = 30;i<34;i++){
+					if((i-30)%2 == 0&&arr[i]!=""){
+						question.push(arr[i]);
+					}
+					if((i-30)%2 == 1&&arr[i]!=""){
+						answer.push(arr[i]);
+					}
+				}
+				
+				console.log(question);
+				console.log(optA);
+				console.log(optB);
+				console.log(optC);
+				console.log(optD);
+				console.log(answer);
+				for(var i = 0;i<answer.length;i++){
+					
+					switch(answer[i])
+					{
+					case "A":
+					  answer[i] = 1;
+					  break;
+					case "B":
+					  answer[i] = 2;
+					  break;
+					case "C":
+					  answer[i] = 3;
+					  break;
+					case "D":
+					  answer[i] = 4;
+					  break;
+					case "√":
+					  answer[i] = 1;
+					  break;
+					case "×":
+					  answer[i] = 2;
+					  break;
+					}
+
+				}
+				console.log(answer);
+
+				var init={'questions':[
+				{'question':question[0],
+				 'answers':['A'+optA[0],'B'+optB[0],'C'+optC[0],'D'+optD[0]],
+				 'correctAnswer':answer[0]
+				 //'correctAnswer':4
+				},
+				{'question':question[1],
+				 'answers':['A'+optA[1],'B'+optB[1],'C'+optC[1],'D'+optD[1]],
+				 'correctAnswer':answer[1]
+				 // 'correctAnswer':2
+				},
+				{'question':question[2],
+				'answers':['A'+optA[2],'B'+optB[2],'C'+optC[2],'D'+optD[2]],
+				'correctAnswer':answer[2]
+				// 'correctAnswer':1
+				},
+				{'question':question[3],
+				 'answers':['A'+optA[3],'B'+optB[3],'C'+optC[3],'D'+optD[3]],
+				 'correctAnswer':answer[3]
+				 // 'correctAnswer':1
+				},
+				{'question':question[4],
+				 'answers':['A'+optA[4],'B'+optB[4],'C'+optC[4],'D'+optD[4]],
+				 'correctAnswer':answer[4]
+				 // 'correctAnswer':3
+				},
+				{'question':question[5],
+				 'answers':['√','×'],
+				 'correctAnswer':answer[6]
+				 //'correctAnswer':4
+				},
+				{'question':question[6],
+				 'answers':['√','×'],
+				 'correctAnswer':answer[6]
+				 //'correctAnswer':4
+				}
+				]};
+				$(function(){
+					$('#quiz-container').jquizzy({
+			        questions: init.questions
+			    	});
+				});
+			}});
+
+		            	}
+        			});					
+
+			
+	</script>
+<script type="text/javascript">
+	//选择
+	// htmlobj = $.ajax({
+	// 			type:"get",
+	// 			url:"admin/list.php",
+	// 			data:{num:5,table:'question_option',case:6},
+	// 			success:function(){
+	// 			var arr=htmlobj.responseText.split('|'); 
+	// 			var question =[];
+	// 			var optA = [];
+	// 			var optB = [];
+	// 			var optC = [];
+	// 			var optD = [];
+	// 			var answer = [];
+	// 			console.log(arr);
+	// 			for(var i = 0;i<arr.length;i++){
+	// 				if(i%6 == 0&&arr[i]!=""){
+	// 					question.push(arr[i]);
+	// 				}
+	// 				if(i%6 == 1&&arr[i]!=""){
+	// 					optA.push(arr[i]);
+	// 				}
+	// 				if(i%6 == 2&&arr[i]!=""){
+	// 					optB.push(arr[i]);
+	// 				}
+	// 				if(i%6 == 3&&arr[i]!=""){
+	// 					optC.push(arr[i]);
+	// 				}
+	// 				if(i%6 == 4&&arr[i]!=""){
+	// 					optD.push(arr[i]);
+	// 				}
+	// 				if(i%6 == 5&&arr[i]!=""){
+	// 					answer.push(arr[i]);
+	// 				}
+	// 			}
+				
+	// 			console.log(question);
+	// 			console.log(optA);
+	// 			console.log(optB);
+	// 			console.log(optC);
+	// 			console.log(optD);
+	// 			console.log(answer);
+	// 			for(var i = 0;i<answer.length;i++){
+					
+	// 				switch(answer[i])
+	// 				{
+	// 				case "A":
+	// 				  answer[i] = 1;
+	// 				  break;
+	// 				case "B":
+	// 				  answer[i] = 2;
+	// 				  break;
+	// 				case "C":
+	// 				  answer[i] = 3;
+	// 				  break;
+	// 				case "D":
+	// 				  answer[i] = 4;
+	// 				  break;
+	// 				default:
+	// 				}
+
+	// 			}
+	// 			console.log(answer);
+
+	// 			var init={'questions':[
+	// 			{'question':question[0],
+	// 			 'answers':['A'+optA[0],'B'+optB[0],'C'+optC[0],'D'+optD[0]],
+	// 			 'correctAnswer':answer[0]
+	// 			 //'correctAnswer':4
+	// 			},
+	// 			{'question':question[1],
+	// 			 'answers':['A'+optA[1],'B'+optB[1],'C'+optC[1],'D'+optD[1]],
+	// 			 'correctAnswer':answer[1]
+	// 			 // 'correctAnswer':2
+	// 			},
+	// 			{'question':question[2],
+	// 			'answers':['A'+optA[2],'B'+optB[2],'C'+optC[2],'D'+optD[2]],
+	// 			'correctAnswer':answer[2]
+	// 			// 'correctAnswer':1
+	// 			},
+	// 			{'question':question[3],
+	// 			 'answers':['A'+optA[3],'B'+optB[3],'C'+optC[3],'D'+optD[3]],
+	// 			 'correctAnswer':answer[3]
+	// 			 // 'correctAnswer':1
+	// 			},
+	// 			{'question':question[4],
+	// 			 'answers':['A'+optA[4],'B'+optB[4],'C'+optC[4],'D'+optD[4]],
+	// 			 'correctAnswer':answer[4]
+	// 			 // 'correctAnswer':3
+	// 			}]};
+	// 			$(function(){
+	// 			$('#quiz-container').jquizzy({
+	// 		        questions: init.questions
+	// 		    	});
+	// 			});
+	// 		}});
+	
+	// //判断
+	// htmlobj = $.ajax({
+	// 			type:"get",
+	// 			url:"admin/list.php",
+	// 			data:{num:1,table:'question_judge',case:6},
+	// 			success:function(){
+	// 			var arr=htmlobj.responseText.split('|'); 
+	// 			var question =[];
+	// 			// var optA = [];
+	// 			// var optB = [];
+	// 			// var optC = [];
+	// 			// var optD = [];
+	// 			var answer = [];
+	// 			console.log(arr);
+	// 			for(var i = 0;i<arr.length;i++){
+	// 				if(i%2 == 0&&arr[i]!=""){
+	// 					question.push(arr[i]);
+	// 				}
+	// 				if(i%2 == 1&&arr[i]!=""){
+	// 					answer.push(arr[i]);
+	// 				}
+	// 			}
+				
+	// 			console.log(question);
+	// 			// console.log(optA);
+	// 			// console.log(optB);
+	// 			// console.log(optC);
+	// 			// console.log(optD);
+	// 			console.log(answer);
+	// 			for(var i = 0;i<answer.length;i++){
+					
+	// 				switch(answer[i])
+	// 				{
+	// 				case "√":
+	// 				  answer[i] = 1;
+	// 				  break;
+	// 				case "×":
+	// 				  answer[i] = 2;
+	// 				  break;
+	// 				case "C":
+	// 				  answer[i] = 3;
+	// 				  break;
+	// 				case "D":
+	// 				  answer[i] = 4;
+	// 				  break;
+	// 				default:
+	// 				}
+
+	// 			}
+	// 			console.log(answer);
+
+	// 			var init={'questions':[
+	// 			{'question':question[0],
+	// 			 'answers':['√','×'],
+	// 			 'correctAnswer':answer[0]
+	// 			 //'correctAnswer':4
+	// 			}]};
+	// 			$(function(){
+	// 			$('#quiz-container').jquizzy({
+	// 		        questions: init.questions
+	// 		    	});
+	// 			});
+	// 		}});
+
+	//简答
+	// htmlobj = $.ajax({
+	// 			type:"get",
+	// 			url:"admin/list.php",
+	// 			data:{num:1,table:'question_answer',case:6},
+	// 			success:function(){
+	// 			var arr=htmlobj.responseText.split('|'); 
+	// 			var question =[];
+	// 			// var optA = [];
+	// 			// var optB = [];
+	// 			// var optC = [];
+	// 			// var optD = [];
+	// 			var answer = [];
+	// 			console.log(arr);
+	// 			for(var i = 0;i<arr.length;i++){
+	// 				if(i%2 == 0&&arr[i]!=""){
+	// 					question.push(arr[i]);
+	// 				}
+	// 				if(i%2 == 1&&arr[i]!=""){
+	// 					answer.push(arr[i]);
+	// 				}
+	// 			}
+				
+	// 			console.log(question);
+	// 			// console.log(optA);
+	// 			// console.log(optB);
+	// 			// console.log(optC);
+	// 			// console.log(optD);
+	// 			console.log(answer);
+	// 			for(var i = 0;i<answer.length;i++){
+					
+	// 				switch(answer[i])
+	// 				{
+	// 				case "√":
+	// 				  answer[i] = 1;
+	// 				  break;
+	// 				case "×":
+	// 				  answer[i] = 2;
+	// 				  break;
+	// 				case "C":
+	// 				  answer[i] = 3;
+	// 				  break;
+	// 				case "D":
+	// 				  answer[i] = 4;
+	// 				  break;
+	// 				default:
+	// 				}
+
+	// 			}
+	// 			console.log(answer);
+
+	// 			var init={'questions':[
+	// 			{'question':question[0],
+	// 			 'answers':[],
+	// 			 'correctAnswer':answer[0]
+	// 			 //'correctAnswer':4
+	// 			}]};
+	// 			$(function(){
+	// 			$('#quiz-container').jquizzy({
+	// 		        questions: init.questions
+	// 		    	});
+	// 			});
+	// 		}});
+
+</script>
+</html>

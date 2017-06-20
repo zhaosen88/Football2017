@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02d4d264-3cfe-4079-91ab-fbb00b3da5a6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/admin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/cartmanage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/favorite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/favoritemanage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/food.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/food_public.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/foodmanage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/foodpublic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/login.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/logo_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/name.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/password.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/shop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/shopList.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/shopcart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/shopmanage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/tag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/tagmanage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/telphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/top_border.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/images/viewList.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/assistantRefereeBig.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/assistantRefereeSmall.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/author.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ballBig.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ballSmall.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bigPic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/confirm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/coruseEx1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ex1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ex2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ex3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jieshao.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/laws of the gameBig.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/laws of the gameSmall.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logoB.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logoS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/playSelect.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/refereeBig.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/refereeSmall.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/searchButton.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/smallPic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/squre.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/start.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/任意球.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/决定一场或主客场胜负的程序.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/助理裁判员.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/场地.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/总则.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/掷界外球.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/比赛开始和重新开始.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/比赛时间.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/比赛进行与停止.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/犯规与不正当行为.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/球.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/球门球.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/球队装备.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/罚球点球.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/裁判员.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/角球.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/计胜方式.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/越位.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/PDF规则/队员人数.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt/ball.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video/videoEx.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/FTR.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Academy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/admin_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/admin_editInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/admin_editPwd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/admin_index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/admin_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/auto.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/course_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/course_edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/course_txt_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/course_video_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/css/adminStyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/js/adminEditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/js/paging - 副本.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/js/paging.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/login_front.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/manual.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/question_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/question_answer_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/question_edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/question_judge_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/question_option_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/templet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/user_edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/user_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/answer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/answer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/guize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/option.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/panduan.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style_course.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/timeout.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/guize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/quiz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/timeout.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/option1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/panduan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video.html" />
+    </list>
+    <ignored path="FTR.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="FTR" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1370" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FTR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FTR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FTR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02d4d264-3cfe-4079-91ab-fbb00b3da5a6" name="Default" comment="" />
+      <created>1497922345689</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1497922345689</updated>
+      <workItem from="1497922347371" duration="525000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="525000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="0" width="1370" height="754" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>
